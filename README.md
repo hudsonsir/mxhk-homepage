@@ -19,6 +19,7 @@
 │   ├── index.css        # 全局样式
 │   └── config.js        # 配置文件
 │   └── CHINA_PRC.png    # ICP图标
+├──public/
 │   └── favicon.ico      # 网站图标
 ├── index.html           # HTML 模板
 ├── package.json         # 项目依赖
@@ -73,5 +74,6 @@ npm run preview
 
 
 ## 部署
+
 
 构建完成后，将 `dist` 目录中的文件部署到任何静态文件服务器即可。
