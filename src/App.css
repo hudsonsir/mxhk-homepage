@@ -1,0 +1,120 @@
+/* === 全局背景 === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #eee url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cstyle%3E.line %7B stroke: %23666; stroke-width: 2; stroke-opacity: 0.12; fill: none; stroke-dasharray: 10 10; stroke-dashoffset: 0; animation: glow 3s ease-in-out infinite, flow 2s linear infinite; %7D .line2 %7B stroke: %23666; stroke-width: 1.6; stroke-opacity: 0.08; fill: none; stroke-dasharray: 6 6; stroke-dashoffset: 0; animation: glow2 4s ease-in-out infinite, flow2 3s linear infinite; %7D .dot %7B fill: %23666; fill-opacity: 0.18; transform-origin: center; animation: pulse 2.5s ease-in-out infinite; %7D @keyframes glow %7B 0%25, 100%25 %7B stroke-opacity: 0.10; %7D 50%25 %7B stroke-opacity: 0.22; %7D %7D @keyframes glow2 %7B 0%25, 100%25 %7B stroke-opacity: 0.06; %7D 50%25 %7B stroke-opacity: 0.14; %7D %7D @keyframes pulse %7B 0%25, 100%25 %7B fill-opacity: 0.18; transform: scale(1); %7D 50%25 %7B fill-opacity: 0.40; transform: scale(1.4); %7D %7D @keyframes flow %7B 0%25 %7B stroke-dashoffset: 0; %7D 100%25 %7B stroke-dashoffset: 20; %7D %7D @keyframes flow2 %7B 0%25 %7B stroke-dashoffset: 0; %7D 100%25 %7B stroke-dashoffset: 12; %7D %7D%3C/style%3E%3Crect width='100%25' height='100%25' fill='transparent'/%3E%3Cpath d='M8 20 H112' class='line'/%3E%3Cpath d='M20 8 V112' class='line'/%3E%3Cpath d='M36 36 H84' class='line2'/%3E%3Ccircle cx='24' cy='24' r='3' class='dot'/%3E%3Ccircle cx='96' cy='96' r='3' class='dot' style='animation-delay: 1.2s'/%3E%3C/svg%3E") repeat;
+    background-size: auto;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* === 居中容器 === */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* === Logo === */
+.logo {
+    width: 300px;
+    height: 90px;
+    margin: 0 auto 20px;
+}
+
+.logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* === 科技感 标题 === */
+.title {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+/* === 科技副标题 === */
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* === 玻璃拟态按钮组 === */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link-item {
+    padding: 14px 28px;
+    border-radius: 16px;
+    background: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s;
+    color: #333;
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.link-icon {
+    font-size: 18px;
+}
+
+/* === 科技感按钮悬浮 === */
+.link-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-color: #666;
+    background: #eee;
+}
+
+/* 底部信息 */
+.footer {
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 备案信息 */
+.icp-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.icp-info:hover {
+    color: #666;
+}
+
+.icp-icon {
+    height: 14px;
+    width: auto;
+    vertical-align: middle;
+}
+
